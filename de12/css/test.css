@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* 冒頭でimport */
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
+/* フォントを指定したいところで */
+
+logo img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+.header img{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* 画像のトリミング */
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+
+
+sans-serif
+393939
+
+/* ========== common ========== */
+html, body {
+	font-size: 16px;
+	font-family: Bookman Old Style;
+	color: #191970;
+    margin-left: 15px;
+    margin-bottom: 40px;
+	background: #efefef;
+}
+
+.first-view-text {
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: bold;
+ }
+
+
+.first-view{
+    height:100vh;
+    background-image: url(../de12/images/24744505_m.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 115px;
+}
+
+
+
+
+h1{
+    text-indent: 0em;
+}
+h2{
+    margin-left: 1em;
+    margin-top: 1em;
+}
+h3{
+    margin-left: 2em;
+}
+div{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+p{
+    margin-left: 3em;
+}
+span.blackback{
+    text-indent: 3em;
+    background: #393939;
+    color: #efefef;
+}
