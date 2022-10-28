@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+   
+    <title>入野_デザ演習４</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+<body>
+    <h1>Python(プログラミング)</h1>
+    <h2>電車知識ゲーム＠神奈川 </h2>
+    <div>
+        <h3>ルール</h3>
+        <b>3人</b>で遊ぶ。<br>
+        順番を決めて、答えていく。<br>
+        他の人の答えは見ないようにする。
+
+        <h3>特徴</h3>
+        全ての問題の配点が違うので、適当に答えたり、正解率が高くても、得点が変わってしまう。<br>
+        だから、一緒にやった人と点数を比べて見ると面白い
+        <h3>ソースコード</h3>
+
+        <code>
+            <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+            <li style="background-color:#EFF;">print("これから神奈川県電車ゲームを始めます")</li>
+            <li style="background-color:#EEF;">print("ルールは簡単！！他の人の答えを見ないこと！")</li>
+            <li style="background-color:#EFF;">print("ゲームスタート！")</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">for i in range(1,4):</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(i,"人目")</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;ok = 0</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;ng = 0</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;score = 0</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("横浜駅を通っている鉄道会社はいくつ？a,10 b,6 c,5")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;w = input("答えはどれだと思う？")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if w == "b":</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("正解")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok = ok + 1</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 1</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("不正解")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ng = ng + 1</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 0</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("みなとみらい線の駅の数は？a,5 b,6 c,2")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;x = input("答えはどれだと思う？")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if x == "b":</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("正解")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok = ok + 1</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 3</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("不正解")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ng = ng + 1</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 0</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("神奈川県にある駅は全部でいくつ？a,251 b,97 c,371")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;y =input("答えはどれだと思う？")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if y =="c":</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("正解")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok = ok + 1</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 9</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("不正解")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ng = ng + 1</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 0</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("神奈川県で駅がないのはどこ？a,綾瀬市 b,中井町 c,座間市")</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;z = input("答えはどれだと思う？")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if z == "a":</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("正解")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok = ok + 1</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 7</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;else:</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("不正解")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ng = ng + 1</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 0</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("終了！！正解数は", ok, "正解率は", ok/(ok+ng)*100, "％です")</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("そして、得点は", score, "点です")</li>
+            </ol></code>
+    </div>
+
+    <div>
+        <h3>参考</h3>
+        <a  href="https://msugino21.github.io/xbp/de12/5.html" target="_blank">杉野真央さんのページ</a><br>
+        <a  href="https://note.com/dngri/n/nac3afbe5e2fa"  target="_blank">Pythonでプログラミング―ゲームを作ろ！―</a>
+    </div>
+</body>
+</html>
