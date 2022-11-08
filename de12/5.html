@@ -30,6 +30,70 @@
         しかし、難しく、途中で何が起こっているのか（コピー＆ペーストをしていたため）分からなくなってしまい、完成に至らなかった。<br>
         途中まで↓<br>
         <img src="./images/schedule.png" width="50%">
+        コード（途中まで）
+
+        <code>
+            <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+            <li style="background-color:#EFF;">from flask import Flask, render_template, request, redirect, url_for</li>
+            <li style="background-color:#EEF;">from flask_sqlalchemy import SQLAlchemy</li>
+            <li style="background-color:#EFF;">import os</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">app = Flask(__name__)</li>
+            <li style="background-color:#EEF;">app.config['SECRET_KEY'] = 'secret_key'</li>
+            <li style="background-color:#EFF;">app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.sqlite'</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">db = SQLAlchemy(app)</li>
+            <li style="background-color:#EEF;">class Task(db.Model):</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;__tablename__ = "tasks"</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;id = db.Column(db.Integer, primary_key=True, autoincrement=True)</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;text = db.Column(db.Text())</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;status = db.Column(db.Integer)</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">db.create_all()</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">@app.route('/')</li>
+            <li style="background-color:#EEF;">def index():</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;tasks = Task.query.all()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;return render_template("index.html", tasks = tasks)</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">app.run(debug=True, host=os.getenv('APP_ADDRESS', 'localhost'), port=8001)</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">@app.route('/new', methods=["POST"])</li>
+            <li style="background-color:#EFF;">def new():</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;task = Task()</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;task.text = request.form["new_text"]</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;task.status = 0</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.add(task)</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.commit()</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;return redirect(url_for('index'))</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">@app.route('/completion', methods=["POST"])</li>
+            <li style="background-color:#EEF;">def completion():</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;id = request.form["id"]</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;task = Task.query.filter_by(id=id).first()</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;task.status = 1</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.commit()</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;return redirect(url_for('index'))</li>
+            <li style="background-color:#EEF;"></li>
+            <li style="background-color:#EFF;">@app.route('/update', methods=["POST"])</li>
+            <li style="background-color:#EEF;">def update():</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;id = request.form["id"]</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;text = request.form["text"]</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;task = Task.query.filter_by(id=id).first()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;task.text = text</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.commit()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;return redirect(url_for('index'))</li>
+            <li style="background-color:#EFF;"></li>
+            <li style="background-color:#EEF;">@app.route('/delete', methods=["POST"])</li>
+            <li style="background-color:#EFF;">def delete():</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;id = request.form["id"]</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;task = Task.query.filter_by(id=id).first()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.delete(task)</li>
+            <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;db.session.commit()</li>
+            <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;return redirect(url_for('index'))</li>
+            </ol></code>
+
     </div>
 
 </body>
