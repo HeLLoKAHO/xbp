@@ -21,13 +21,142 @@ logotohome img{
 }
 
 
-/*=================================nnnnnnn.////bbbbackground=んなにぬねの==================================＊/
+/*==================================================================*/
 
-
-html, body{
-	background-image: url(images/mainhaikei.jpg);
-	background-color: #f4ffff;
-	background-repeat: no-repeat;
-	background-size: color;
+/*body全体(背景画像)の変更*/
+body{
+        background-color: #f4ffff;
+        background-image: url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
 }
-　　
+
+/* divの全体設定 */
+div{
+    color: #ffffff;
+}
+
+/* 「hello welcome to my page」 の設定 */
+.main_title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: #fff462;
+    border: solid 5px #fffafa;
+    width: 1300px;
+    margin: 0 auto;
+    font-size: 80px;
+}
+
+/* グラデーション設定 */
+.background{
+    background: linear-gradient(180deg, rgba(217, 175, 217, 0.4) /* red,green,blue,透明度の順 */, rgba(151, 217, 225, 0.4) /* red,green,blue,透明度の順 */ ), url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;/* 横に繰り返す */
+    height: 140vh;
+}
+
+/* -xbp- 設定 */
+span{
+    font-size: 50px;
+    color: #001e43;
+}
+
+/* 枠線(box)の設定 */
+.icon{
+    text-align: center;
+    border: 5px double;
+    border-color: black;
+    border-radius: 8px; /* 半径が8pxの角丸 */
+    width: 400px;
+    font-size: 30px;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+}
+
+/* 枠線の余白設定 */
+.icon p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* h1設定 */
+h1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #bbdbf3;
+    text-align: center;
+    font-size: 80px;
+}
+
+/* class="blue"の設定 */
+.blue{
+    color: #0bd;
+}
+
+/* h2設定 */
+h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+/* h3設定 */
+h3{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+/* h4設定 */
+h4{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+/* h5設定 */
+h5{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+/* h6設定 */
+h6{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+/* ul全体の設定 */
+ul{
+    font-size: 30px;
+    color: #191970;
+    text-align: center;
+}
+
+/* li全体の設定 */
+li{
+    font-size: 30px;
+    text-align: center;
+    color: #191970;
+}
+
+/* リンクの色の設定 */
+a{
+    color: #191970;
+}
+
+/* class="list"の設定 */
+.list{
+    text-align: center;
+}
+
+
+/* class="main-list"(デザイン演習・デジファブのリンク)の余白設定 */
+.main-list{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+ 
+}

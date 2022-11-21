@@ -26,9 +26,9 @@ logotohome img{
 /*body全体の変更*/
 body{
         background-color: #f4ffff;
-        background-image: url("https://www.pakutaso.com/shared/img/thumb/yokohama-land-4_TP_V.jpg");
+        background-image: url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center top;
         height: 100vh;
 }
@@ -46,24 +46,26 @@ div{
     width: 1300px;
     margin: 0 auto;
     font-size: 80px;
-    
 }
 
 
-
 .background{
-    background: linear-gradient(45deg, rgba(217, 175, 217, 0.8), rgba(151, 217, 225, 0.8)), url("https://www.pakutaso.com/shared/img/thumb/yokohama-land-4_TP_V.jpg");
+    background: linear-gradient(180deg, rgba(217, 175, 217, 0.4), rgba(151, 217, 225, 0.4)), url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     height: 140vh;
+}
+
+span{
+    font-size: 50px;
 }
 
 .icon{
     text-align: center;
     border: 5px double;
     border-color: black;
-    border-radius: 5px; /* 半径が8pxの角丸 */
-    width: 150px;
+    border-radius: 8px; /* 半径が8pxの角丸 */
+    width: 1000px;
     font-size: 30px;
     margin: 2em 0;
     padding: 0.5em 1em;
@@ -115,7 +117,7 @@ h6{
 
 ul{
     font-size: 30px;
-    color: blueviolet;
+    color: #fffafa;
     text-align: center;
 }
 
