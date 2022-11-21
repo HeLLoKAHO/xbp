@@ -1,0 +1,138 @@
+@charset "UFT-8"; /*文字化け防ぐため＊/
+
+/* 冒頭でimport */
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
+/* フォントを指定したところで */
+
+
+logo img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+logotohome img{
+    border-radius: 70%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+
+/*==================================================================*/
+
+/*body全体の変更*/
+body{
+        background-color: #f4ffff;
+        background-image: url("https://www.pakutaso.com/shared/img/thumb/yokohama-land-4_TP_V.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+}
+
+div{
+    color: #ffffff;
+}
+
+.main_title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: #192f60;
+    border: solid 5px #fffafa;
+    width: 1300px;
+    margin: 0 auto;
+    font-size: 80px;
+    
+}
+
+
+
+.background{
+    background: linear-gradient(45deg, rgba(217, 175, 217, 0.8), rgba(151, 217, 225, 0.8)), url("https://www.pakutaso.com/shared/img/thumb/yokohama-land-4_TP_V.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140vh;
+}
+
+.icon{
+    text-align: center;
+    border: 5px double;
+    border-color: black;
+    border-radius: 5px; /* 半径が8pxの角丸 */
+    width: 150px;
+    font-size: 30px;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+}
+
+.icon p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+h1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #bbdbf3;
+    text-align: center;
+    font-size: 80px;
+}
+
+.blue{
+    color: #0bd;
+}
+
+h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+h3{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+h4{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+h5{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+h6{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #192f60;
+}
+
+ul{
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+}
+
+li{
+    font-size: 30px;
+    text-align: center;
+}
+
+.list{
+    text-align: center;
+}
+
+
+.main-list{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow: scroll;
+}
