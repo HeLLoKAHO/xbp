@@ -35,7 +35,11 @@ body{
 
 /* divの全体設定 */
 div{
-    color: #ffffff;
+    color: #bc611e;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 
 /* 「hello welcome to my page」 の設定 */
@@ -60,8 +64,8 @@ div{
 
 /* -xbp- 設定 */
 span{
-    font-size: 50px;
-    color: #f3a68c;
+    font-size: 30px;
+    color: #bd6856;
 }
 
 /* 枠線(box)の設定 */
@@ -129,7 +133,7 @@ h6{
 
 /* ul全体の設定 */
 ul{
-    font-size: 30px;
+    font-size: 28px;
     color: #191970;
     text-align: center;
     display: flex;
@@ -138,7 +142,7 @@ ul{
 
 /* li全体の設定 */
 li{
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     color: #6b3f31;
 }
