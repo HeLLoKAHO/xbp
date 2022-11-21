@@ -26,7 +26,7 @@ logotohome img{
 /*body全体(背景画像)の変更*/
 body{
         background-color: #f4ffff;
-        background-image: url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
+        background-image: url("https://drive.google.com/uc?export=download&id=1PVOwbxoasjstIBVqgH6XpWRltFmqlyx2");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
@@ -43,7 +43,7 @@ div{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
     padding: 10px;
-    color: #fff462;
+    color: #6c3524;
     border: solid 5px #fffafa;
     width: 1300px;
     margin: 0 auto;
@@ -52,7 +52,7 @@ div{
 
 /* グラデーション設定 */
 .background{
-    background: linear-gradient(180deg, rgba(217, 175, 217, 0.4) /* red,green,blue,透明度の順 */, rgba(151, 217, 225, 0.4) /* red,green,blue,透明度の順 */ ), url("https://www.pakutaso.com/shared/img/thumb/ERY82_separate20131225_TP_V.jpg");
+    background: linear-gradient(180deg, rgba(217, 175, 217, 0.6) /* red,green,blue,透明度の順 */, rgba(151, 217, 225, 0.2) /* red,green,blue,透明度の順 */ ), url("https://drive.google.com/uc?export=download&id=1PVOwbxoasjstIBVqgH6XpWRltFmqlyx2");
     background-size: cover;
     background-repeat: repeat-x;/* 横に繰り返す */
     height: 140vh;
@@ -61,7 +61,7 @@ div{
 /* -xbp- 設定 */
 span{
     font-size: 50px;
-    color: #001e43;
+    color: #f3a68c;
 }
 
 /* 枠線(box)の設定 */
@@ -132,18 +132,20 @@ ul{
     font-size: 30px;
     color: #191970;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* li全体の設定 */
 li{
     font-size: 30px;
     text-align: center;
-    color: #191970;
+    color: #6b3f31;
 }
 
 /* リンクの色の設定 */
 a{
-    color: #191970;
+    color: #6b3f31;
 }
 
 /* class="list"の設定 */
@@ -158,5 +160,10 @@ a{
     padding-bottom: 10px;
     padding-left: 60px;
     padding-right: 60px;
- 
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4%;
 }
