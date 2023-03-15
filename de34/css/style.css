@@ -1,3 +1,6 @@
+
+/*ポートフォリオのcss*/
+
 @charset "utf-8";
 /* 冒頭でimport */
 @import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
@@ -23,11 +26,11 @@ logotohome img{
 /* ========== common ========== */
 html, body {
 	font-size: 16px;
-	font-family: sans-serif;
-	color: #393939;
+	font-family: Bookman Old Style;
+	color: #001e43;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #efefef;
+	background: #efffff;
 }
 h1{
     text-indent: 0em;
