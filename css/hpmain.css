@@ -134,17 +134,24 @@ section h2{
 .wrap{
 	clear: both;
 	width: 100%;
+    overflow: hidden;
+    position: relative;
 	background: #f6f6f6;
+    text-align: center;
+    margin-top: auto;
 }
 
 .bg{
 	line-height: 0;
 }
 
-.txt h2{
-	padding: 0 0 20px !important;
+.txt {
+	padding: 150px 0 20px !important;
 }
 
+.h2{
+	padding: 0 0 20px !important;
+}
 
 /* SEC03 SERVICE MESSAGE STORY
 ------------------------------------------------------------*/
