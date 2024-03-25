@@ -1,0 +1,301 @@
+
+/*ポートフォリオのcss*/
+
+@charset "utf-8";
+/* 冒頭でimport */
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
+/* フォントを指定したいところで */
+
+
+
+
+/* ========== common ========== */
+
+body {
+    margin: 0;
+	font: 14px/1.9;
+	font-weight: 300;
+    -webkit-text-size-adjust:100%;
+    font-family: 'Lora','Noto Serif JP', serif;
+	color: #68483F;
+	background: linear-gradient(to right, #87cefa, #ffffe0);
+    max-width: 100%;
+    padding: 0 100px 50px;
+}
+
+/*見出し設定-------------------------------------*/
+
+h1, h2, h3, h4{
+    font-weight: normal;
+}
+
+/*URL設定-------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: #00008b;
+}
+
+a:hover{
+    color: #00ffff;
+}
+
+
+/*navの設定----------------------------------*/
+nav{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #68483F;
+    }
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    }
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    }
+
+nav ul li a{
+    text-decoration: none;
+    }
+
+nav ul li a:hover{
+    color: #00ffff;
+    }
+
+/*header設定-------------------------------------*/
+header{
+    margin: auto;
+    text-align: center;
+    width:100%;
+    height:600px;
+    border-bottom: 1px solid #68483F;
+}
+
+header img{
+    width: 450px;
+    height: 250px;
+    object-position: 0% 50%;
+    border-radius: 50px  50px 50px 50px;
+}
+
+
+.midashi{
+    margin-top: 75px;
+}
+
+
+
+/*目次の設定---------------------------------*/
+.mokuji {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #68483F;
+}
+
+.mokuji1{
+    width: calc(100% /10*6);
+    text-align: center;
+}
+
+.gazou1{
+    width: 30%;
+}
+
+.gazou2{
+    width: 40%;
+    margin-bottom: 80px;
+}
+
+.mokuji2{
+    width: calc(100% /10*4);
+    text-align: right;
+    padding: 20px 100px 20px;
+}
+
+.mokuji2 li{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.mokuji2 a, .mokuji2 p{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mokuji2 p{
+    width: 50%;
+}
+
+.botan {
+    width: 150px;
+    padding: 10px 3px;
+    background: #87cefa;
+    color: #68483F;
+    border-radius: 10px;
+}
+
+.botan:hover{
+    background: #00008b;
+    color: #87cefa;
+}
+
+
+/*終わりの設定-------------------------------*/
+
+.last{
+    display: flex;
+    max-width: 100%;
+    padding-top: 200px;
+}
+
+.last img {
+    width: calc(100% / 3);
+    height: auto;
+    object-fit: cover;
+  }
+
+.matome {
+    padding: 30px 0 15px;
+    text-align: center;
+    font-size: small;
+}
+
+/*表の設定-----------------------------------*/
+table{
+    border:solid 1px black;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 3px 10px;
+    text-align: left;
+  }
+  
+table td {
+    padding: 3px 10px;
+  }
+
+.yarukoto {
+    padding: 20px;
+}
+
+  /*横並び----------------------------------*/
+  .hyou{
+    display: flex;
+  }
+
+  /*画像　ocean感想*/
+  .ocean{
+    border-radius: 40px;
+  }
+
+  /*見出しデザイン------------------------------*/
+
+  .manabi{
+    display:flex;
+    align-items: center;
+  }
+  
+  .manabi::before{
+    content: "";
+    border-top: 1px solid #68483F;
+    width: 3rem;
+  }
+
+  .manabi::after{
+    content: "";
+    border-top: 1px solid #68483F;
+    flex-grow:1;
+  }
+  
+  .manabi:before {
+    margin-right: 1rem; 
+  }
+  .manabi:after {
+    margin-left: 1rem; 
+  }
+
+/*PROFILEの設定-------------------------*/
+.inner{
+    display: flex;
+    text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+    font-size: 15px;
+}
+
+.profiele{
+	width: 500px;
+  	margin: 20px 30px 20px 0;
+}
+
+.xbp{
+    width: 500px;
+    margin: 20px 0 20px 30px;
+}
+
+.sec{
+	color: #68483F;
+}
+
+
+/*各ページの他設定---------------------------*/
+
+.box{
+    padding: 0.2em 0.5em;
+    margin: 1em 0; 
+    color: #68483F;
+    background: #87cefa;
+    box-shadow: 0px 0px 0px 10px #87cefa;
+    border: dashed 2px #00008b;
+    border-radius: 8px;
+    text-align: center;
+      
+}
+
+.box p{
+    margin: 0; 
+    padding: 0;
+}
+
+.list li{
+    list-style: square;
+    padding: 0.5em;
+}
+
+.list i{
+    color: #00008b;
+}
+
+/*Challengeof2024ページの設定---------------------------*/
+.mychallenge{
+    text-align: center;
+}
+
+.mychallenge h2{
+    text-decoration: underline 3px #00008b;
+}
+.mychallenge p{
+    text-align: center;
+}
+
+/*Spring_Breakページの設定------------------------------*/
+.event{
+    height: 500px;
+}
