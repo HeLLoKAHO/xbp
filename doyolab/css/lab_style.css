@@ -274,9 +274,14 @@ table td {
     padding: 0;
 }
 
+.list{
+    margin-left: 40px;
+}
+
 .list li{
     list-style: square;
     padding: 0.5em;
+    margin-left: 40px;
 }
 
 .list i{
@@ -298,4 +303,15 @@ table td {
 /*Spring_Breakページの設定------------------------------*/
 .event{
     height: 500px;
+}
+
+/*Project_analogページの設定---------------------------*/
+.tama{
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #68483F;
+}
+
+.tama h2{
+    text-decoration: underline 3px #00008b;
 }
