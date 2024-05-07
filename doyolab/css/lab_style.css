@@ -330,3 +330,7 @@ table td {
 .sony_mesh p{
     font-size: small;
 } 
+
+.mesh{
+    border-bottom: 1px solid #68483F;
+}
