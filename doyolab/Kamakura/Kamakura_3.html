@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+   
+    <title>入野_doyolab_kamakura</title>
+    
+    <link rel="stylesheet" href="../css/lab_style.css">
+    <link rel="shortcut icon" href="../images/book.ico">
+    
+<body>
+   <h1 class="box">鎌倉プロジェクト</h1>
+    <div> 
+    <h2>★インタビュー準備</h2>
+    </div>    
+    
+    <div>
+        <h3><b><u>デジタルフィールドノート</u></b></h3>
+        <a href="https://doyolab.net/appli/digitalfieldnote_chiangmai/">このページで行う（道用さんお手製）</a><br><br>
+        1. 1.Movieの[ファイルを選択]から動画を選択   （拡張子は.MOVや.mp4でOK） <br>
+        2.コメントを残していく  （この時動画の尺によって前半・後半と周りで分担するとGOOD!）<br>
+        <img src="../images/degi_field1.png" width="700px"><br>
+        <img src="../images/degi_field2.png" width="700px"><br>
+        3.[保存&ダウンロード]をクリック→csvファイルが保存される（すべてtag.csvになってしまうので名前は自分で変える）<br>
+        4.前半・後半で分けた場合は1人のところにファイルを集めて、csvだけのファイルを作る<br><br><br>
+
+    </div>
+
+    <div>
+        <h3><b><u>csv統合</u></b></h3>
+        <a href="https://doyolab.net/appli/cmbcsv/">このページで行う（これも道用さんお手製）</a><br><br>
+        1.[ファイル選択]でcsvだけのファイルから選択   （ファイル数を確認する） <br>
+        2.[統合してダウンロード]をクリック    （merged.csvがダウンロードされればOK）<br>
+        3.デジタルフィールドノートに戻り、（動画が選択された状態で）2.MEMOの[ファイルを選択]からダウンロードしたmerged.csvを選択<br>
+        4.↓この状態になれば完了 （うまくできれば時間は順番通りになる）<br>
+        <img src="../images/csv.png" width="700px"><br><br><br>
+    </div>
+    <div>
+        *今回授業中はうまくいったが、その後もう1度行ったら統合がうまくできなかった。（原因不明）<br>
+        そのためインターネット検索をし、<a href="https://loglogme.com/news/news-809/" target="_blank">こちらのページ</a>を
+        参考にターミナル（MacBookに搭載）で統合を行った。<br>
+        （Windowsユーザーは<a href="https://www.whizz-tech.co.jp/5454/" target="_blank">こちらのページ</a>の「1.コマンドでまとめる方法」を参照してください。）
+        <br><br>
+
+        ↓自分的に少しわかりにくいところがあったので、簡単に説明（csvファイルの統合直前までは同じ）<br>
+        1.csvをまとめたファイルを開き、command+option+c でディレクトリをコピー<br>
+        2.ターミナルを開き（Launchpadで検索するとすぐに出る）、以下を入力<br><br>
+
+        <b>cd /Users/Macのユーザー名/Downloads</b> <br><br>
+
+        ・cdの後はスペースを入れる<br>
+        ・コピーしたディレクトリをペーストペースト（/Users/Macのユーザー名/Downloads はあくまで例なので注意）<br>
+        →私の場合は    cd /Users/ユーザー名/Desktop/csv    となる<br><br>
+
+        3.ここまできたらEnterを押す ↓こうなればOK<br>
+        <img src="../images/tarminal.png" width="600px"><br>
+        4.そして以下を入力<br><br>
+
+        <b>cat *.csv > All_test.csv</b><br><br>
+
+        ・All_test.csvは統合後のファイル名になるので、〜〜.csvにする<br><br>
+
+        5.csvをまとめたファイルを見ると〜〜.csvというファイルが新しくできていれば完了（ただし時間の順番は順番通りにならない）<br>
+        6.あとはデジタルフィールドノートに戻り、元の作業をして終了<br><br><br>
+
+
+    </div>
+
+    <div class="kamakura">
+        <h3><b><u>音声を文章化する</u></b></h3>
+        Word（スマホ版）では聞き取った音声から自動で文字起こしができる機能がある<br>
+        1.ログインして、新規作成をタップ<br>
+        2.右下にマイクのマークがあるのでタップ<br>
+        <img src="../images/word_1.jpg" width="200px"><br>
+        3.このままでは句読点がつかないので、マイクの左の歯車マークから設定を行う<br>
+        <img src="../images/word_2.jpg" width="250"><br>
+        4.[句読点の自動挿入を有効にする]をオンにする<br>
+        <img src="../images/word_3.jpg" width="250px"><br>
+        5.あとはインタビューの際に音声を聞き取る（この時できればマイクがあるとしっかり聞き取れて、誤字が少ない）<br><br><br>
+
+    </div>
+
+
+  
+
+    <div class="matome">
+        <a href="./index.html">TOPページへ戻る</a><br>
+        最終更新日 2024.5.8
+    </div>
+
+  
+</body>
+</html>
