@@ -327,6 +327,10 @@ table td {
     color: #00008b; 
 }
 
+.mark {
+    background: linear-gradient(transparent 65%, #ffffe0 65%);
+}
+
 .sony_mesh p{
     font-size: small;
 } 
