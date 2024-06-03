@@ -346,6 +346,15 @@ table td {
     border-bottom: 1px solid #68483F;
 }
 
+.mesh li{
+    list-style: circle;
+    font-weight: bold;
+}
+
+.mesh p{
+    text-decoration: underline;
+}
+
 .sony_mesh i{
     background: linear-gradient(transparent 10%, #00008b 10%);
     color: #ffffe0;
