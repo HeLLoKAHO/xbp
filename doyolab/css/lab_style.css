@@ -150,6 +150,14 @@ li{
     border-radius: 10px;
 }
 
+.botan1{
+    width: 160px;
+    padding: 10px 3px;
+    background: #1e90ff;
+    color: #ffffe0;
+    border-radius: 10px;
+}
+
 .botan:hover{
     background: #00008b;
     color: #87cefa;
@@ -369,6 +377,9 @@ table td {
     border-bottom: 1px solid #68483F;
 }
 
+.kamakura h3{
+    font-weight: bold;
+}
 
 
 
